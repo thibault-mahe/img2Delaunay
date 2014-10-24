@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>img2Delaunay</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+
+        <header>
+            <h1>img2Delaunay</h1>
+            <input type="file" id="imageLoader" name="imageLoader" />
+            <input id="value_slider" type="range" min="0" max="100">
+            <button id="save">save</button>
+            <div class="alert">
+                <p>Oups ! This is not a valid img extension.</p>
+                <p>Accepted img extensions are jpeg and png. </p>
+            </div>
+        </header>
+        
+        <main>
+            <canvas id="features" width="640" height="480"></canvas>        
+            <canvas id="triangles" width="640" height="480"></canvas>
+        </main>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jsfeat-min.js"></script>
+        <script type="text/javascript" src="js/delaunay.js"></script>
+        <script type="text/javascript" src="js/FileSaver.min.js"></script>
+        <script type="text/javascript" src="js/canvas-toBlob.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
