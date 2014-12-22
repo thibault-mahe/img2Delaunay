@@ -151,7 +151,7 @@ function handleFiles(e) {
             //Blob.js + canvas-toBlob + FileSaver.js (saveAs)
             function saveImage() {
                 triangleCanvas.toBlob(function(blob) {
-                    saveAs(blob, "trime.png");
+                    saveAs(blob, "img2Delaunay.png");
                 }, "image/png");
             }
 
